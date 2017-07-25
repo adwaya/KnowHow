@@ -170,7 +170,7 @@ spec:
 ```
 Now create the *service*, `$ kubectl create -f httpdsvc.yaml`
 ```
-$ kubectl get svc nginxsvc
+$ kubectl get svc httpdsvc
 NAME      LABELS     SELECTOR   IP(S)          PORT(S)
 httpdsvc  app=httpd  app=httpd  10.100.168.74  80/TCP
 ```
