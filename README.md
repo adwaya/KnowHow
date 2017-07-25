@@ -140,7 +140,6 @@ replicationcontrollers/my-httpd
 Now that we have only one replicas as mentioned in the definition, we can scale pods by using the command,
 ```
 $ kubectl scale --replicas=3 rc my-httpd
-
 $ kubectl get rc
 CONTROLLER  CONTAINER(S)  IMAGE(S)  SELECTOR   REPLICAS
 my-httpd    httpd         httpd     app=httpd  3
@@ -148,6 +147,7 @@ my-httpd    httpd         httpd     app=httpd  3
 The replication controller will now ensure that number of replicas will be run at all times.
 
 **Services**
+
 *Services* provide a single stable name and address for a set of pods. They act as basic load balancers.
 
 Most pods are designed to be long-running, but once the single process dies, the pod dies with it. If it dies, the replication controller replaces it with a new pod. But every time pod is started by the replication controller, the pod gets a new IP address.
