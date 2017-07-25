@@ -140,6 +140,7 @@ replicationcontrollers/my-httpd
 Now that we have only one replicas as mentioned in the definition, we can scale pods by using the command,
 ```
 $ kubectl scale --replicas=3 rc my-httpd
+replicationcontroller "my-httpd" scaled
 $ kubectl get rc
 CONTROLLER  CONTAINER(S)  IMAGE(S)  SELECTOR   REPLICAS
 my-httpd    httpd         httpd     app=httpd  3
